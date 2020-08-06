@@ -1,0 +1,145 @@
+<doctype html>
+<html>
+<body>
+
+<h1>Moja prva stranica</h1>
+<p>Moj prvi paragraf</p>
+
+<p id="demo1"></p>
+
+<script>
+document.getElementById("demo1).innerHTML=5+6;
+document.write(5+6);
+</script>
+
+<button type="button" onclick="document.write(5+6)">Koliko je 5+6</button>
+
+<p id="demo"></p>
+
+<script>
+//window.alert(5+6);//otvori novi prozorcic sa rezultatom
+//console.log(5+6);
+
+var pi=3.14;
+var person="John Doe";
+var answer="Yes I am";
+var x=5;
+document.getElementById("demo").innerHTML=
+pi + "<br>" + person + "<br>" +answer; //br novi red
+
+document.getElementById("demo").innerHTML=Math.pow(x,2);
+
+var person={
+	firstName	:"Din",
+	lastName	:"Gujić",
+	age			:24,
+	eyeColor	:"braon"
+};
+document.getElementById("demo").innerHTML=
+person.firstName+" is "+person.age+" years old.";
+</script>
+
+
+<h2>JavaSkript Functions</h2>
+
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="id"></p>
+<script>
+function mojafunkcija(p1,p2){
+	return p1*p2;
+}
+document.getElementById("demo2").innerHTML=mojafunkcija(4, 3);
+
+//var x=drugafunkcija(4,3);
+//document.getElementById("demo3").innerHTML=myFunction();
+
+function myFunction() {
+  alert("Hello World!");
+}
+
+
+
+var person={
+	firstName:"Din",
+	lastName:"Gujić",
+	id:54,
+	fullName:function(){
+		return this.firstName+" "+this.lastName;
+	}
+	
+};
+
+document.getElementById("demo5").innerHTML=person.fullName();
+
+
+function displayDate(){
+document.getElementById("id").innerHTML=Date();	
+}
+
+function func{
+var str=document.getAttention("demo7").innerHTML;
+var txt=str.replace("ovo","ono");
+document.getElementById("demo7").innerHTML=txt;
+}
+
+</script>
+<p> Djesi sta ima ovo ono:</p>
+<button onclick="func()"> Zamijeni odma</button>
+<button onclick="document.getElementById('demo6').innerHTML=Date()">The time is?</button>
+
+<button onclick="displayDate()">Time is?</button>
+<button onclick="this.innerHTML=Date()">Vrijeme je?</button>
+
+<h1>-----------------------------------------------------------------</h1>
+</body>
+</html>
+
+
+
+
+
+<doctype html>
+<html>
+<body>
+<p id="dd"></p>
+
+<script>
+var str="lociraj ovo!";
+var pos=str.lastIndexOf("ovo")
+document.getElementById("dd").innerHTML=pos;
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

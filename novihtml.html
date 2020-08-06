@@ -1,0 +1,65 @@
+<doctype HTML>
+<HTML>
+<body>
+
+<h1>Idemo novi</h1>
+
+<p>Sort metoda</p>
+<button onclick="Funkcija()">Klikni i probaj</button>
+
+<p id="demo"></p>
+<script>
+var voce=["Banana","Kivi","Jabuka","Limiun"];
+document.getElementById("demo").innerHTML=voce;
+
+function Funkcija(){
+	voce.sort();
+	voce.reverse();
+	document.getElementById("demo").innerHTML=voce;
+}
+</script>
+
+<p>Idemo drugu</p>
+<button onclick="funkcija1()">Klikniiii</button>
+<p id="demo1"></p>
+<script>
+var brojevi=[1,50,23,4,77,3];
+document.getElementById("demo1").innerHTML=brojevi;
+/*--------------SORTIRANJE BROJEVA -------------------------*/
+function funkcija1(){
+	brojevi.sort(function(a,b){return a-b});
+	document.getElementById("demo1").innerHTML=brojevi;
+}
+
+</script>
+
+
+
+<H2>IDEMO NOVIIIIIIIIIIIIIIIIIIIII</H2>
+
+<p>Unesi godine i klikni dugme</p>
+<input id="godine" value="18"/>
+<button onclick="funkcija2()">Klikni</button>
+
+<p id="demo2"></p>
+
+<script>
+function funkcija2(){
+var godine, puno;
+godine=Number(document.getElementById("godine").value);
+if (isNaN(godine))
+	
+	puno="Imput nije broj";
+	else
+		puno=(godine<18)?"Premlad":"Prestar";
+	
+	document.getElementById("demo2").innerHTML=puno;
+
+}
+</script>
+
+
+
+
+</body>
+</HTML>

@@ -1,0 +1,83 @@
+<doctype HTML>
+<HTML>
+<body>
+
+<h2>JavaSKRIPT Metode</h2>
+<p>Zamijeni "Mikrosoft" sa "Google" u paragrafu</p>
+
+<button onclick="func()">Ovdje klikni</button>
+<p id="demo">Posjeti Mikrosoft</p>
+
+
+<script>
+function func(){
+var str=document.getElementById("demo").innerHTML;
+var txt=str.replace("Mikrosoft","Google");
+document.getElementById("demo").innerHTML=txt;
+}
+</script>
+
+
+<button onclick="funct()">Ovdje klikni</button>
+<p id="demo1">Zamijeni ovu rijec DIN</p>
+<script>
+function funct(){
+var a=document.getElementById("demo1").innerHTML;
+var b=a.replace("DIN","SIN");
+document.getElementById("demo1").innerHTML=b;
+}
+</script>
+
+
+<button onclick="funk()">Klikni i povecaj</button>
+<p id="demo2">Hello World!</p>
+
+<script>
+function funk() {
+  var text = document.getElementById("demo2").innerHTML;
+  document.getElementById("demo2").innerHTML = text.toUpperCase();
+}
+
+</script>
+
+<button onclick="uradi()">POvecaj</button>
+<button onclick="sma()">Ovdje smanji</button>
+<button onclick="obavijest()">Izbaci obavijest</button>
+<p id="dem">Ovaj paragraf povecaj</p>
+<p id="dem12"></p>
+<p id="dem123"></p>
+
+<p id="din"></p>
+
+
+<script>
+function uradi(){
+	var tex=document.getElementById("dem").innerHTML;
+	document.getElementById("dem").innerHTML=tex.toUpperCase();
+}
+
+function sma(){
+	var tex1=document.getElementById("dem").innerHTML;
+	document.getElementById("dem").innerHTML=tex1.toLowerCase();
+	
+}
+
+function obavijest(){
+	
+	var d="      Hello World!       ";
+	alert(d);
+}
+
+
+var x=123;
+document.getElementById("din").innerHTML=x.toString();
+
+var e=["Citroen","golf","audi"];
+var kol={ime:"din",prezime:"gujic",godine:"24"};
+document.getElementById("dem123").innerHTML=kol.ime + " " +kol.prezime+" godina ima: "+kol.godine;
+document.getElementById("dem12").innerHTML=e;
+</script>
+
+
+</HTML>
+</body>

@@ -1,0 +1,7 @@
+Sažetak poglavlja
+Upotrijebite styleatribut za oblikovanje HTML elemenata
+Koristite background-colorza pozadinsku boju
+Koristite colorza boje teksta
+Upotreba font-familyza tekstualne fontove
+Koristite font-sizeza veličinu teksta
+Koristi se text-alignza poravnavanje teksta
